@@ -1,0 +1,444 @@
+#include "main.h"
+#include "FreeRTOS.h"
+#include "task.h"
+#include "queue.h"
+#include "stdio.h"
+#include "string.h"
+#include "timers.h"
+/* Private variables ---------------------------------------------------------*/
+UART_HandleTypeDef huart1;
+uint8_t myMessage[100] ;
+//char deneme[100]="PORTA Pin State :";
+uint8_t commandCode = 0;
+
+typedef struct APP_COMMAND
+{
+	uint8_t COMMAND_NUM;
+	uint8_t COMMAND_ARGS[10];
+
+}APP_COMMAND_t;
+
+
+/******************************PRIVATE DEFINES*********************************/
+#define LED_ON						1
+#define LED_OFF						2
+#define LED_TOGGLE_ON				3
+#define LED_TOGGLE_OFF				4
+#define LED_STATUS					5
+#define EXIT_APP					6
+
+
+char menuDisplay[] = {"\r\n LED_ON            -> 1 \
+                       \r\n LED_OFF           -> 2 \
+                       \r\n LED_TOGGLE_ON     -> 3 \
+					   \r\n LED_TOGGLE_OFF    -> 4 \
+                       \r\n LED_STATUS        -> 5 \
+                       \r\n EXIT_APP          -> 6 \
+                       \r\n                     \
+                       \r\n Type your option here : \r\n"};
+
+uint8_t command_buffer[20];
+uint8_t command_length = 0;
+GPIO_PinState state;
+uint8_t rxCaracter;
+BaseType_t token = pdFALSE;
+
+/******************************PRIVATE DEFINES*********************************/
+
+
+
+/* Task handles */
+TaskHandle_t task1MenuHandle = NULL;
+TaskHandle_t task2CommandHandle = NULL;
+TaskHandle_t task3CommandProcessHandle = NULL;
+TaskHandle_t task4UartWriteHandle = NULL;
+
+/* Queues */
+QueueHandle_t Uart_Write_Queue = NULL;   // UART write queue
+QueueHandle_t Command_Queue = NULL;      // Command queue
+
+/* Function prototypes */
+void SystemClock_Config(void);
+static void MX_USART1_UART_Init(void);
+static void MX_GPIO_Init(void);
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart);
+
+/* Task function prototypes */
+void Task1_Menu_Display_Handler(void *params);
+void Task2_Command_Handling_Handler(void *params);
+void Task3_Command_Process_Handler(void *params);
+void Task4_Uart_Write_Handler(void *params);
+uint8_t getCommandCode(uint8_t *buffer);
+uint8_t getArguments(uint8_t *buffer);
+
+void LED_ON_Func(void);
+void LED_OFF_Func(void);
+void LED_TOGGLE_ON_Func(uint32_t duration);
+void LED_TOGGLE_OFF_Func(void);
+void LED_STATUS_Func(char *ledStateMessage);
+void EXIT_APP_Func(void);
+
+
+/* Main function */
+int main(void)
+{
+    /* MCU Configuration--------------------------------------------------------*/
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_USART1_UART_Init();
+
+    /* Initialize UART */
+
+    /* Create queues */
+    Uart_Write_Queue = xQueueCreate(10, sizeof(char*));   // Queue for UART write
+    Command_Queue = xQueueCreate(10, sizeof(uint8_t));   // Queue for commands
+
+    /* Check if queues were created successfully */
+    if (Uart_Write_Queue != NULL && Command_Queue != NULL)
+    {
+        /* Print success message */
+        sprintf((char*)myMessage, "Kuyruk Olusturma Basarili\r\n");
+        HAL_UART_Transmit(&huart1, (uint8_t *)myMessage, strlen((char*)myMessage), HAL_MAX_DELAY);
+
+        /* Create tasks */
+        xTaskCreate(Task1_Menu_Display_Handler, "Menu Display", configMINIMAL_STACK_SIZE, NULL, 1, &task1MenuHandle); // bunun önceliği düşük olsun ki önce komutum çalışsın sonra diğer göreve geçsin
+        xTaskCreate(Task2_Command_Handling_Handler, "Command Handling", configMINIMAL_STACK_SIZE, NULL, 2, &task2CommandHandle);
+        xTaskCreate(Task3_Command_Process_Handler, "Command Process", configMINIMAL_STACK_SIZE, NULL, 2, &task3CommandProcessHandle);
+        xTaskCreate(Task4_Uart_Write_Handler, "Uart Write", configMINIMAL_STACK_SIZE, NULL, 2, &task4UartWriteHandle);
+
+        /* Start FreeRTOS scheduler */
+        vTaskStartScheduler();
+    }
+    else
+    {
+        /* Print error message */
+        sprintf((char*)myMessage, "Kuyruk Olusturma Hatali!\r\n");
+        HAL_UART_Transmit(&huart1, (uint8_t *)myMessage, strlen((char*)myMessage), HAL_MAX_DELAY);
+
+        /* Loop indefinitely */
+        while (1);
+    }
+
+    /* We should never get here as control is now taken by the scheduler */
+    while (1);
+}
+
+/* System Clock Configuration */
+void SystemClock_Config(void)
+{
+    RCC_OscInitTypeDef RCC_OscInitStruct = {0};
+    RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
+    if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+    RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK | RCC_CLOCKTYPE_SYSCLK | RCC_CLOCKTYPE_PCLK1;
+    RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSE;
+    RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
+    RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
+    if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
+    {
+        Error_Handler();
+    }
+}
+
+/* USART1 UART Initialization */
+static void MX_USART1_UART_Init(void)
+{
+    huart1.Instance = USART1;
+    huart1.Init.BaudRate = 115200;
+    huart1.Init.WordLength = UART_WORDLENGTH_8B;
+    huart1.Init.StopBits = UART_STOPBITS_1;
+    huart1.Init.Parity = UART_PARITY_NONE;
+    huart1.Init.Mode = UART_MODE_TX_RX;
+    huart1.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    huart1.Init.OverSampling = UART_OVERSAMPLING_16;
+    huart1.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+    huart1.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+    if (HAL_UART_Init(&huart1) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+    /* Start UART receive interrupt */
+    HAL_UART_Receive_IT(&huart1, &rxCaracter, 1);
+}
+
+/* GPIO Initialization */
+static void MX_GPIO_Init(void)
+{
+    __HAL_RCC_GPIOA_CLK_ENABLE();
+
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
+
+    GPIO_InitStruct.Pin = GPIO_PIN_5;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+}
+
+/* UART receive interrupt callback */
+void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
+{
+    if(huart->Instance == USART1)
+    {
+        BaseType_t xHigherPriorityTaskWoken ;
+
+        // Gelen veriyi tamponda sakla
+        command_buffer[command_length++] = rxCaracter;
+
+        // Belirli uzunluğa ulaştığında görevi bildir
+        if(rxCaracter == '\r') // Enter tuşuna basıldığında komut sonlanır
+        {
+            command_buffer[command_length] = '\0'; // Sonlandırma karakterini ekle
+            command_length = 0;
+            //xTaskNotify(task2CommandHandle, 0, eNoAction, &xHigherPriorityTaskWoken);
+          //  xTaskNotify(task1MenuHandle,0x00,eNoAction);
+           // xTaskNotify(task2CommandHandle,0x00,eNoAction);
+        }
+
+        // Tekrar alım işlemini başlat
+        HAL_UART_Receive_IT(huart, &rxCaracter, 1);
+
+        if((xTaskNotifyFromISR(task1MenuHandle, 0, eNoAction, &xHigherPriorityTaskWoken)==pdTRUE ) && (xTaskNotifyFromISR(task2CommandHandle, 0, eNoAction, &xHigherPriorityTaskWoken)==pdTRUE))
+        {
+
+        	//xTaskNotifyFromISR -> pdTRUE dönerse hazırda bekleyen bir görev var anlamındadır
+           taskYIELD(); // o an hangi görev çalışıyorsa onu uyut dedik,yani görevi değiştiririz manuel olarak
+        }
+    }
+}
+
+/* Task function implementations */
+void Task1_Menu_Display_Handler(void *params)
+{
+    // UART kuyruğuna veri göndericeğim
+    // her bildirim geldiğinde kuyruğa tekrar mesaj yazması lazım
+
+    char *rxData = menuDisplay;
+
+    while (1)
+    {
+    	xQueueSend(Uart_Write_Queue, &rxData, portMAX_DELAY); // Uart_Write_Queue bu kuyruğa veri gödnerceğiz
+
+        xTaskNotifyWait(0, 0, NULL, portMAX_DELAY);
+    }
+}
+
+void Task2_Command_Handling_Handler(void *params)
+{
+
+
+	APP_COMMAND_t *appTxCmd;
+
+    while (1)
+    {
+        xTaskNotifyWait(0, 0, NULL, portMAX_DELAY);
+        appTxCmd = (APP_COMMAND_t*) pvPortMalloc(sizeof(APP_COMMAND_t)); // HEAP DE alan ayırdık
+
+        taskENTER_CRITICAL(); // interruptları kapatır,görevler arsındaki rekabeti durdurur
+
+        commandCode = getCommandCode(command_buffer);
+
+
+        appTxCmd->COMMAND_NUM = commandCode;
+        uint8_t command_code_copy = appTxCmd->COMMAND_NUM;
+        getArguments(appTxCmd->COMMAND_ARGS);
+
+
+        taskEXIT_CRITICAL(); // interrupt fonksityonalrını tekrar aktif hale getirir
+        xQueueSend(Command_Queue, &command_code_copy, portMAX_DELAY);
+
+    }
+}
+
+void Task3_Command_Process_Handler(void *params)
+{
+	//APP_COMMAND_t *appRxCmd;
+	uint8_t received_code;
+	char taskStateMessage[50];
+
+	uint32_t toggleTime= pdMS_TO_TICKS(500);
+
+    while (1)
+    {
+
+    	xQueueReceive(Command_Queue, &received_code, portMAX_DELAY);
+
+    	if(received_code==LED_ON)
+    	{
+    		LED_ON_Func();
+    	}
+    	else if(received_code==LED_OFF)
+    	{
+    		LED_OFF_Func();
+    	}
+    	else if(received_code==LED_TOGGLE_ON)
+    	{
+    		LED_TOGGLE_ON_Func(toggleTime);
+    	}
+    	else if(received_code==LED_TOGGLE_OFF)
+    	{
+    		LED_TOGGLE_OFF_Func();
+    	}
+    	else if(received_code==LED_STATUS)
+    	{
+    		LED_STATUS_Func(taskStateMessage);
+    	}
+    	else if(received_code==EXIT_APP)
+    	{
+    		EXIT_APP_Func();
+    	}
+    	else
+    	{
+
+    	}
+    }
+}
+
+void Task4_Uart_Write_Handler(void *params)
+{
+    char *txData = NULL;
+
+    while (1)
+    {
+        // Kuyruktan veri alın
+        xQueueReceive(Uart_Write_Queue, &txData, portMAX_DELAY);
+
+        // Veriyi UART ile gönder
+        if(txData != NULL)
+        {
+            HAL_StatusTypeDef result;
+            do {
+                result = HAL_UART_Transmit_IT(&huart1, (uint8_t *)txData, strlen(txData));
+                if (result == HAL_BUSY) {
+                    // UART meşgulse biraz bekleyin ve tekrar deneyin
+                    vTaskDelay(pdMS_TO_TICKS(10));
+                }
+            } while(result == HAL_BUSY);
+
+            if (result != HAL_OK) {
+                sprintf((char*)myMessage, "UART Gönderim Hatası: %d\r\n", result);
+                HAL_UART_Transmit(&huart1, (uint8_t *)myMessage, strlen((char*)myMessage), HAL_MAX_DELAY);
+            }
+        }
+    }
+}
+
+void LED_ON_Func(void)
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);
+}
+void LED_OFF_Func(void)
+{
+	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 0);
+}
+
+void LED_TOGGLE(TimerHandle_t xTimer)
+{
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5);
+}
+
+void LED_TOGGLE_ON_Func(uint32_t duration)
+{
+	TimerHandle_t ledtimerHandle = NULL;
+	// sen bir türden API çağırıyosan önce onun türünden bir nesne oluştur
+
+	ledtimerHandle = xTimerCreate("LED TOGGLE TIMER", duration, pdTRUE, NULL, LED_TOGGLE);
+
+	xTimerStart(ledtimerHandle,portMAX_DELAY);
+	/*
+	 belirli bir yazılım zamanlayıcısını (timer) başlatır
+
+	 ledtimerHandle->başlatılacak olan zamanlayıcının tanıtıcısıdır (handle).
+	 	 	 	 	 xTimerCreate fonksiyonundan dönen zamanlayıcı tanıtıcısıdır
+
+	  portMAX_DELAY -> zamanlayıcıyı başlatma isteğinizin zamanlayıcı
+	  	  komut kuyruğuna eklenmesi için bekleyebileceğiniz maksimum süreyi belirtir.
+	 	 portMAX_DELAY değerini kullanarak, zamanlayıcı komut kuyruğunda
+	 	 	 	 	 	 yer açılana kadar bekleyebilirsiniz (bu, zaman aşımlarını devre dışı bırakır)
+	 */
+
+}
+void LED_TOGGLE_OFF_Func(void)
+{
+	xTimerStop(ledtimerHandle,portMAX_DELAY);
+}
+
+void LED_STATUS_Func(char *ledStateMessage)
+{
+    // Get the state of the LED
+    GPIO_PinState state = HAL_GPIO_ReadPin(GPIOA, GPIO_PIN_5);
+
+    // Manually construct the message string
+    char *messagePrefix = " Led is status: ";
+    size_t prefixLength = strlen(messagePrefix);
+
+    // Copy the prefix to the message buffer
+    strcpy(ledStateMessage, messagePrefix);
+
+    // Append the LED state to the message buffer
+    if (state == GPIO_PIN_SET)
+    {
+        strcpy(ledStateMessage + prefixLength, "1\r\n");
+    }
+    else
+    {
+        strcpy(ledStateMessage + prefixLength, "0\r\n");
+    }
+
+
+    xQueueSend(Uart_Write_Queue,&ledStateMessage,portMAX_DELAY);
+/*
+ * 	Ben bunu hal_uart_transmit_it ile yaptığımda veriler görevler falan birbirine karıştı
+ * 	ama kuruğa veri kouyduğumda task4 de bu kuyruktaki verileri okuyoruz ve daha güzel oluyor
+ *
+ *
+ *
+ * */
+}
+
+
+
+
+void EXIT_APP_Func(void)
+{
+
+}
+
+
+
+uint8_t getCommandCode(uint8_t *buffer)
+{
+
+	return buffer[0] - 48 ;
+}
+uint8_t getArguments(uint8_t *buffer)
+{ // şu an bu fonks kullanımıyoruz
+
+	return buffer[0] ;
+
+}
+/* Error Handler */
+void Error_Handler(void)
+{
+    /* Error handler implementation */
+    while (1);
+}
+
+/* Optional: assert_failed function */
+#ifdef USE_FULL_ASSERT
+void assert_failed(uint8_t *file, uint32_t line)
+{
+    /* User can add his own implementation to report the file name and line number */
+    while (1);
+}
+#endif

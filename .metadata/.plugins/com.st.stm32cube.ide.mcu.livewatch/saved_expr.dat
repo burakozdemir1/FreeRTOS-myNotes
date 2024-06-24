@@ -1,0 +1,17 @@
+count
+buttonState
+buttonState
+current_priority1
+current_priority2
+myTask1Handler
+myTask2Handler
+buttonStatus
+deneme
+rxData
+uartDataReceived
+array
+commandCode
+command_buffer[0]
+*appTxCmd
+info
+control

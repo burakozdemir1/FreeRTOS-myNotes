@@ -1,0 +1,352 @@
+10:03:24 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  17132	     28	   8628	  25788	   64bc	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+10:03:37 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  19964	    128	   8744	  28836	   70a4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+10:03:46 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19964	    128	   8744	  28836	   70a4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+10:04:05 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  19964	    128	   8744	  28836	   70a4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+10:08:09 **** Clean-only build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 clean 
+rm -rf ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.su
+rm -rf ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.su
+rm -rf ./MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/list.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/list.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/list.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/list.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/queue.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/queue.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/queue.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.su ./MiddleWares/Third_Party/FreeRTOS/org/Source/timers.cyclo ./MiddleWares/Third_Party/FreeRTOS/org/Source/timers.d ./MiddleWares/Third_Party/FreeRTOS/org/Source/timers.o ./MiddleWares/Third_Party/FreeRTOS/org/Source/timers.su
+rm -rf ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.su ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.cyclo ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.d ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o ./Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.su
+rm -rf ./Core/Startup/startup_stm32f072rbtx.d ./Core/Startup/startup_stm32f072rbtx.o
+rm -rf ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f0xx_hal_msp.cyclo ./Core/Src/stm32f0xx_hal_msp.d ./Core/Src/stm32f0xx_hal_msp.o ./Core/Src/stm32f0xx_hal_msp.su ./Core/Src/stm32f0xx_it.cyclo ./Core/Src/stm32f0xx_it.d ./Core/Src/stm32f0xx_it.o ./Core/Src/stm32f0xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f0xx.cyclo ./Core/Src/system_stm32f0xx.d ./Core/Src/system_stm32f0xx.o ./Core/Src/system_stm32f0xx.su
+rm -rf Semaphore_Two_Tasks.elf Semaphore_Two_Tasks.list Semaphore_Two_Tasks.map default.size.stdout
+rm: can't remove 'Semaphore_Two_Tasks.elf': Permission denied
+make: [makefile:83: clean] Error 1 (ignored)
+ 
+10:08:09 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/list.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/list.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/timers.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/timers.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/timers.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_cortex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_dma.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_exti.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_flash_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_gpio.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_i2c_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_pwr_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_rcc_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_tim_ex.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart.o"
+arm-none-eabi-gcc "../Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.d" -MT"Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Drivers/STM32F0xx_HAL_Driver/Src/stm32f0xx_hal_uart_ex.o"
+arm-none-eabi-gcc -mcpu=cortex-m0 -g3 -DDEBUG -c -x assembler-with-cpp -MMD -MP -MF"Core/Startup/startup_stm32f072rbtx.d" -MT"Core/Startup/startup_stm32f072rbtx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Startup/startup_stm32f072rbtx.o" "../Core/Startup/startup_stm32f072rbtx.s"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_msp.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_msp.d" -MT"Core/Src/stm32f0xx_hal_msp.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_hal_timebase_tim.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_hal_timebase_tim.d" -MT"Core/Src/stm32f0xx_hal_timebase_tim.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_hal_timebase_tim.o"
+arm-none-eabi-gcc "../Core/Src/stm32f0xx_it.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/stm32f0xx_it.d" -MT"Core/Src/stm32f0xx_it.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/stm32f0xx_it.o"
+arm-none-eabi-gcc "../Core/Src/syscalls.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/syscalls.d" -MT"Core/Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/syscalls.o"
+arm-none-eabi-gcc "../Core/Src/sysmem.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/sysmem.d" -MT"Core/Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/sysmem.o"
+arm-none-eabi-gcc "../Core/Src/system_stm32f0xx.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/system_stm32f0xx.d" -MT"Core/Src/system_stm32f0xx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/system_stm32f0xx.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  21484	    128	   8816	  30428	   76dc	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+10:08:24 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21484	    128	   8816	  30428	   76dc	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+11:21:35 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  18632	     28	   8700	  27360	   6ae0	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:23:11 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:155:49: warning: pointer targets in passing argument 1 of 'strlen' differ in signedness [-Wpointer-sign]
+  155 |    HAL_UART_Transmit(&huart1, myMessage, strlen(myMessage), 1000);
+      |                                                 ^~~~~~~~~
+      |                                                 |
+      |                                                 uint8_t * {aka unsigned char *}
+In file included from ../Core/Src/main.c:29:
+d:\stm32cubeide_1.12.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.200.202301161003\tools\arm-none-eabi\include\string.h:41:17: note: expected 'const char *' but argument is of type 'uint8_t *' {aka 'unsigned char *'}
+   41 | size_t  strlen (const char *);
+      |                 ^~~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  21624	    128	   8816	  30568	   7768	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:23:38 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  21624	    128	   8816	  30568	   7768	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:23:47 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  21624	    128	   8816	  30568	   7768	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+11:27:57 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Master_Task_Handler':
+../Core/Src/main.c:86:18: warning: unused variable 'xMasterPassId' [-Wunused-variable]
+   86 |     unsigned int xMasterPassId; // Değişken adı eklendi
+      |                  ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  21624	    128	   8816	  30568	   7768	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:33:50 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Master_Task_Handler':
+../Core/Src/main.c:89:16: warning: unused variable 'xStatus' [-Wunused-variable]
+   89 |  portBASE_TYPE xStatus; // kuyruğun durumunu sorgulamak için
+      |                ^~~~~~~
+../Core/Src/main.c:87:16: warning: variable 'xMasterPassId' set but not used [-Wunused-but-set-variable]
+   87 |  unsigned int  xMasterPassId; // geçiş id si
+      |                ^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  25344	    128	   8816	  34288	   85f0	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:57:23 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Slave_Task_Handler':
+../Core/Src/main.c:163:4: warning: implicit declaration of function 'SlaveDoWork' [-Wimplicit-function-declaration]
+  163 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:170:6: warning: conflicting types for 'SlaveDoWork'
+  170 | void SlaveDoWork(unsigned int passId)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:163:4: note: previous implicit declaration of 'SlaveDoWork' was here
+  163 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  26820	    128	   8816	  35764	   8bb4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+11:58:00 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26820	    128	   8816	  35764	   8bb4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+12:23:38 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Slave_Task_Handler':
+../Core/Src/main.c:167:4: warning: implicit declaration of function 'SlaveDoWork' [-Wimplicit-function-declaration]
+  167 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:174:6: warning: conflicting types for 'SlaveDoWork'
+  174 | void SlaveDoWork(unsigned int passId)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:167:4: note: previous implicit declaration of 'SlaveDoWork' was here
+  167 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  26820	    128	   8816	  35764	   8bb4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+12:31:02 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26820	    128	   8816	  35764	   8bb4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+12:32:28 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Slave_Task_Handler':
+../Core/Src/main.c:167:4: warning: implicit declaration of function 'SlaveDoWork' [-Wimplicit-function-declaration]
+  167 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:174:6: warning: conflicting types for 'SlaveDoWork'
+  174 | void SlaveDoWork(unsigned int passId)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:167:4: note: previous implicit declaration of 'SlaveDoWork' was here
+  167 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  26804	    128	   8816	  35748	   8ba4	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+12:38:48 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Slave_Task_Handler':
+../Core/Src/main.c:188:4: warning: implicit declaration of function 'SlaveDoWork' [-Wimplicit-function-declaration]
+  188 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:195:6: warning: conflicting types for 'SlaveDoWork'
+  195 | void SlaveDoWork(unsigned int passId)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:188:4: note: previous implicit declaration of 'SlaveDoWork' was here
+  188 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  26788	    128	   8816	  35732	   8b94	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 
+12:42:09 **** Incremental Build of configuration Debug for project Semaphore_Two_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Semaphore_Two_Tasks/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Core/Inc -I"C:/denemeler/Semaphore_Two_Tasks/FreeRtosConfig" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Slave_Task_Handler':
+../Core/Src/main.c:188:4: warning: implicit declaration of function 'SlaveDoWork' [-Wimplicit-function-declaration]
+  188 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:195:6: warning: conflicting types for 'SlaveDoWork'
+  195 | void SlaveDoWork(unsigned int passId)
+      |      ^~~~~~~~~~~
+../Core/Src/main.c:188:4: note: previous implicit declaration of 'SlaveDoWork' was here
+  188 |    SlaveDoWork(xSlavePassId);
+      |    ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Semaphore_Two_Tasks.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Semaphore_Two_Tasks\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Semaphore_Two_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Semaphore_Two_Tasks.elf
+ 
+arm-none-eabi-size   Semaphore_Two_Tasks.elf 
+arm-none-eabi-objdump -h -S  Semaphore_Two_Tasks.elf  > "Semaphore_Two_Tasks.list"
+   text	   data	    bss	    dec	    hex	filename
+  26772	    128	   8816	  35716	   8b84	Semaphore_Two_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: Semaphore_Two_Tasks.list
+ 

@@ -1,0 +1,10 @@
+13:17:15 **** Incremental Build of configuration Debug for project Change_Task_Priority_HAL ****
+make -j8 all 
+arm-none-eabi-size   Change_Task_Priority_HAL.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16648	    124	   5780	  22552	   5818	Change_Task_Priority_HAL.elf
+Finished building: default.size.stdout
+ 
+
+13:17:15 Build Finished. 0 errors, 0 warnings. (took 299ms)
+

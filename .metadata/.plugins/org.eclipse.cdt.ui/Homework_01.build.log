@@ -1,0 +1,17 @@
+13:19:51 **** Incremental Build of configuration Debug for project Homework_01 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "Homework_01.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Homework_01\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Homework_01.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Homework_01.elf
+ 
+arm-none-eabi-size   Homework_01.elf 
+arm-none-eabi-objdump -h -S  Homework_01.elf  > "Homework_01.list"
+   text	   data	    bss	    dec	    hex	filename
+  10692	     24	   5576	  16292	   3fa4	Homework_01.elf
+Finished building: default.size.stdout
+ 
+Finished building: Homework_01.list
+ 
+
+13:19:51 Build Finished. 0 errors, 0 warnings. (took 744ms)
+

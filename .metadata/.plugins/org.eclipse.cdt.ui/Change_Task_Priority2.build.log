@@ -1,0 +1,43 @@
+09:59:45 **** Incremental Build of configuration Debug for project Change_Task_Priority2 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Change_Task_Priority2/FreeRtosConfig" -I"C:/denemeler/Change_Task_Priority2/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/Change_Task_Priority2/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Change_Task_Priority2/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Task1_Handler':
+../Core/Src/main.c:81:46: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+   81 |  sprintf((char*)myMessage,"Task_1 Priority: %d\r\n",uxTaskPriorityGet(myTask1Handler));
+      |                                             ~^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |      |
+      |                                              int    UBaseType_t {aka long unsigned int}
+      |                                             %ld
+../Core/Src/main.c:85:46: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+   85 |  sprintf((char*)myMessage,"Task_2 Priority: %d\r\n",uxTaskPriorityGet(myTask2Handler));
+      |                                             ~^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |      |
+      |                                              int    UBaseType_t {aka long unsigned int}
+      |                                             %ld
+../Core/Src/main.c: In function 'Task2_Handler':
+../Core/Src/main.c:120:46: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  120 |  sprintf((char*)myMessage,"Task_1 Priority: %d\r\n",uxTaskPriorityGet(myTask1Handler));
+      |                                             ~^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |      |
+      |                                              int    UBaseType_t {aka long unsigned int}
+      |                                             %ld
+../Core/Src/main.c:124:46: warning: format '%d' expects argument of type 'int', but argument 3 has type 'UBaseType_t' {aka 'long unsigned int'} [-Wformat=]
+  124 |  sprintf((char*)myMessage,"Task_2 Priority: %d\r\n",uxTaskPriorityGet(myTask2Handler));
+      |                                             ~^      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                              |      |
+      |                                              int    UBaseType_t {aka long unsigned int}
+      |                                             %ld
+arm-none-eabi-gcc -o "Change_Task_Priority2.elf" @"objects.list"   -mcpu=cortex-m0 -T"C:\denemeler\Change_Task_Priority2\STM32F072RBTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Change_Task_Priority2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Change_Task_Priority2.elf
+ 
+arm-none-eabi-size   Change_Task_Priority2.elf 
+arm-none-eabi-objdump -h -S  Change_Task_Priority2.elf  > "Change_Task_Priority2.list"
+   text	   data	    bss	    dec	    hex	filename
+  20112	    128	   8752	  28992	   7140	Change_Task_Priority2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Change_Task_Priority2.list
+ 
+
+09:59:48 Build Finished. 0 errors, 4 warnings. (took 2s.640ms)
+

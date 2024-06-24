@@ -1,0 +1,589 @@
+20:13:59 **** Build of configuration Debug for project Chage_Task_Priority ****
+make -j8 all 
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/list.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/list.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/Chage_Task_Priority/FreeRtosConfig" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o"
+../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.c:41: warning: "portNVIC_INT_CTRL_REG" redefined
+   41 | #define portNVIC_INT_CTRL_REG                 ( *( ( volatile uint32_t * ) 0xe000ed04 ) )
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:48:6: error: #error INCLUDE_xTaskGetCurrentTaskHandle must be set to 1 to build stream_buffer.c
+   48 |     #error INCLUDE_xTaskGetCurrentTaskHandle must be set to 1 to build stream_buffer.c
+      |      ^~~~~
+In file included from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/portable.h:52,
+                 from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:62,
+                 from ../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.c:34:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/portmacro.h:81: note: this is the location of the previous definition
+   81 | #define portNVIC_INT_CTRL_REG  ( * ( ( volatile uint32_t * ) 0xe000ed04 ) )
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:304:44: error: 'configTASK_NOTIFICATION_ARRAY_ENTRIES' undeclared here (not in a function)
+  304 |         volatile uint32_t ulNotifiedValue[ configTASK_NOTIFICATION_ARRAY_ENTRIES ];
+      |                                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:316:43: error: unknown type name 'StreamBufferCallbackFunction_t'
+  316 |                                           StreamBufferCallbackFunction_t pxSendCompletedCallback,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:329:1: error: unknown type name 'portDONT_DISCARD'
+  329 | portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+      | ^~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:329:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+  329 | portDONT_DISCARD PRIVILEGED_DATA TCB_t * volatile pxCurrentTCB = NULL;
+      |                                        ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskCreate':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:317:43: error: unknown type name 'StreamBufferCallbackFunction_t'
+  317 |                                           StreamBufferCallbackFunction_t pxReceiveCompletedCallback ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:763:23: warning: implicit declaration of function 'pvPortMallocStack'; did you mean 'pvPortMalloc'? [-Wimplicit-function-declaration]
+  763 |             pxStack = pvPortMallocStack( ( ( ( size_t ) usStackDepth ) * sizeof( StackType_t ) ) ); /*lint !e9079 All values returned by pvPortMalloc() have at least the alignment required by the MCU's stack and this allocation is the stack. */
+      |                       ^~~~~~~~~~~~~~~~~
+      |                       pvPortMalloc
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:324:54: error: unknown type name 'StreamBufferCallbackFunction_t'
+  324 |                                                      StreamBufferCallbackFunction_t pxSendCompletedCallback,
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:325:54: error: unknown type name 'StreamBufferCallbackFunction_t'
+  325 |                                                      StreamBufferCallbackFunction_t pxReceiveCompletedCallback )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:763:21: warning: assignment to 'StackType_t *' {aka 'long unsigned int *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  763 |             pxStack = pvPortMallocStack( ( ( ( size_t ) usStackDepth ) * sizeof( StackType_t ) ) ); /*lint !e9079 All values returned by pvPortMalloc() have at least the alignment required by the MCU's stack and this allocation is the stack. */
+      |                     ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c: In function 'vListInitialise':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:71:25: error: 'MiniListItem_t' {aka 'struct xMINI_LIST_ITEM'} has no member named 'pvOwner'
+   71 |         pxList->xListEnd.pvOwner = NULL;
+      |                         ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:72:25: error: 'MiniListItem_t' {aka 'struct xMINI_LIST_ITEM'} has no member named 'pxContainer'
+   72 |         pxList->xListEnd.pxContainer = NULL;
+      |                         ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c: In function 'vListInitialiseItem':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:89:13: error: 'ListItem_t' {aka 'struct xLIST_ITEM'} has no member named 'pxContainer'; did you mean 'pvContainer'?
+   89 |     pxItem->pxContainer = NULL;
+      |             ^~~~~~~~~~~
+      |             pvContainer
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c: In function 'vListInsertEnd':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:122:20: error: 'ListItem_t' {aka 'struct xLIST_ITEM'} has no member named 'pxContainer'; did you mean 'pvContainer'?
+  122 |     pxNewListItem->pxContainer = pxList;
+      |                    ^~~~~~~~~~~
+      |                    pvContainer
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:781:21: warning: implicit declaration of function 'vPortFreeStack'; did you mean 'vPortFree'? [-Wimplicit-function-declaration]
+  781 |                     vPortFreeStack( pxStack );
+      |                     ^~~~~~~~~~~~~~
+      |                     vPortFree
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c: In function 'vListInsert':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:193:20: error: 'ListItem_t' {aka 'struct xLIST_ITEM'} has no member named 'pxContainer'; did you mean 'pvContainer'?
+  193 |     pxNewListItem->pxContainer = pxList;
+      |                    ^~~~~~~~~~~
+      |                    pvContainer
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c: In function 'uxListRemove':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:203:45: error: 'ListItem_t' {aka 'struct xLIST_ITEM'} has no member named 'pxContainer'; did you mean 'pvContainer'?
+  203 |     List_t * const pxList = pxItemToRemove->pxContainer;
+      |                                             ^~~~~~~~~~~
+      |                                             pvContainer
+../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c:221:21: error: 'ListItem_t' {aka 'struct xLIST_ITEM'} has no member named 'pxContainer'; did you mean 'pvContainer'?
+  221 |     pxItemToRemove->pxContainer = NULL;
+      |                     ^~~~~~~~~~~
+      |                     pvContainer
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferReset':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:514:5: error: unknown type name 'StreamBufferCallbackFunction_t'
+  514 |     StreamBufferCallbackFunction_t pxSendCallback = NULL, pxReceiveCallback = NULL;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:514:53: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  514 |     StreamBufferCallbackFunction_t pxSendCallback = NULL, pxReceiveCallback = NULL;
+      |                                                     ^~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:514:79: warning: initialization of 'int' from 'void *' makes integer from pointer without a cast [-Wint-conversion]
+  514 |     StreamBufferCallbackFunction_t pxSendCallback = NULL, pxReceiveCallback = NULL;
+      |                                                                               ^~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:542:13: warning: implicit declaration of function 'prvInitialiseNewStreamBuffer' [-Wimplicit-function-declaration]
+  542 |             prvInitialiseNewStreamBuffer( pxStreamBuffer,
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferSend':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:666:27: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+  666 |         xRequiredSpace += sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: note: each undeclared identifier is reported only once for each function it appears in
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:666:27: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+  666 |         xRequiredSpace += sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferSendFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:791:27: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+  791 |         xRequiredSpace += sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'prvWriteMessageToBuffer':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:831:5: error: unknown type name 'configMESSAGE_BUFFER_LENGTH_TYPE'
+  831 |     configMESSAGE_BUFFER_LENGTH_TYPE xMessageLength;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:838:28: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  838 |         xMessageLength = ( configMESSAGE_BUFFER_LENGTH_TYPE ) xDataLengthBytes;
+      |                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:838:62: error: expected ';' before 'xDataLengthBytes'
+  838 |         xMessageLength = ( configMESSAGE_BUFFER_LENGTH_TYPE ) xDataLengthBytes;
+      |                                                              ^~~~~~~~~~~~~~~~~
+      |                                                              ;
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferReceive':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:892:38: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+  892 |         xBytesToStoreMessageLength = sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:65:31: warning: dereferencing 'void *' pointer
+   65 |         if( ( pxStreamBuffer )->xTaskWaitingToSend != NULL )              \
+      |                               ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:65:31: error: request for member 'xTaskWaitingToSend' in something not a structure or union
+   65 |         if( ( pxStreamBuffer )->xTaskWaitingToSend != NULL )              \
+      |                               ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:40:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:67:53: warning: dereferencing 'void *' pointer
+   67 |             ( void ) xTaskNotify( ( pxStreamBuffer )->xTaskWaitingToSend, \
+      |                                                     ^~
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:1766:78: note: in definition of macro 'xTaskNotify'
+ 1766 | #define xTaskNotify( xTaskToNotify, ulValue, eAction ) xTaskGenericNotify( ( xTaskToNotify ), ( ulValue ), ( eAction ), NULL )
+      |                                                                              ^~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:67:53: error: request for member 'xTaskWaitingToSend' in something not a structure or union
+   67 |             ( void ) xTaskNotify( ( pxStreamBuffer )->xTaskWaitingToSend, \
+      |                                                     ^~
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:1766:78: note: in definition of macro 'xTaskNotify'
+ 1766 | #define xTaskNotify( xTaskToNotify, ulValue, eAction ) xTaskGenericNotify( ( xTaskToNotify ), ( ulValue ), ( eAction ), NULL )
+      |                                                                              ^~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:70:31: warning: dereferencing 'void *' pointer
+   70 |             ( pxStreamBuffer )->xTaskWaitingToSend = NULL;                \
+      |                               ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:70:31: error: request for member 'xTaskWaitingToSend' in something not a structure or union
+   70 |             ( pxStreamBuffer )->xTaskWaitingToSend = NULL;                \
+      |                               ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:92:55: note: in expansion of macro 'sbRECEIVE_COMPLETED'
+   92 |     #define prvRECEIVE_COMPLETED( pxStreamBuffer )    sbRECEIVE_COMPLETED( ( pxStreamBuffer ) )
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:961:13: note: in expansion of macro 'prvRECEIVE_COMPLETED'
+  961 |             prvRECEIVE_COMPLETED( xStreamBuffer );
+      |             ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferNextMessageLengthBytes':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:982:5: error: unknown type name 'configMESSAGE_BUFFER_LENGTH_TYPE'
+  982 |     configMESSAGE_BUFFER_LENGTH_TYPE xTempReturn;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:991:31: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+  991 |         if( xBytesAvailable > sbBYTES_TO_STORE_MESSAGE_LENGTH )
+      |                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferReceiveFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1036:38: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+ 1036 |         xBytesToStoreMessageLength = sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'prvReadMessageFromBuffer':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1081:5: error: unknown type name 'configMESSAGE_BUFFER_LENGTH_TYPE'
+ 1081 |     configMESSAGE_BUFFER_LENGTH_TYPE xTempNextMessageLength;
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1088:100: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+ 1088 |         xNextTail = prvReadBytesFromBuffer( pxStreamBuffer, ( uint8_t * ) &xTempNextMessageLength, sbBYTES_TO_STORE_MESSAGE_LENGTH, xNextTail );
+      |                                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'prvAddNewTaskToReadyList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1034:13: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 1034 |         if( pxCurrentTCB == NULL )
+      |             ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1034:13: note: each undeclared identifier is reported only once for each function it appears in
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'xStreamBufferIsFull':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:224:5: warning: implicit declaration of function 'listINSERT_END' [-Wimplicit-function-declaration]
+  224 |     listINSERT_END( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); \
+      |     ^~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1084:9: note: in expansion of macro 'prvAddTaskToReadyList'
+ 1084 |         prvAddTaskToReadyList( pxNewTCB );
+      |         ^~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:214:54: error: 'configMESSAGE_BUFFER_LENGTH_TYPE' undeclared (first use in this function)
+  214 | #define sbBYTES_TO_STORE_MESSAGE_LENGTH    ( sizeof( configMESSAGE_BUFFER_LENGTH_TYPE ) )
+      |                                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1165:38: note: in expansion of macro 'sbBYTES_TO_STORE_MESSAGE_LENGTH'
+ 1165 |         xBytesToStoreMessageLength = sbBYTES_TO_STORE_MESSAGE_LENGTH;
+      |                                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskDelete':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1120:21: note: in expansion of macro 'prvGetTCBFromHandle'
+ 1120 |             pxTCB = prvGetTCBFromHandle( xTaskToDelete );
+      |                     ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c:487:25: error: unknown type name 'HeapStats_t'
+  487 | void vPortGetHeapStats( HeapStats_t * pxHeapStats )
+      |                         ^~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1364:43: error: unknown type name 'StreamBufferCallbackFunction_t'
+ 1364 |                                           StreamBufferCallbackFunction_t pxSendCompletedCallback,
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'eTaskGetState':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1356:22: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 1356 |         if( pxTCB == pxCurrentTCB )
+      |                      ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1365:43: error: unknown type name 'StreamBufferCallbackFunction_t'
+ 1365 |                                           StreamBufferCallbackFunction_t pxReceiveCompletedCallback )
+      |                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'uxStreamBufferGetStreamBufferNumber':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1402:29: warning: dereferencing 'void *' pointer
+ 1402 |         return xStreamBuffer->uxStreamBufferNumber;
+      |                             ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'uxTaskPriorityGet':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1402:29: error: request for member 'uxStreamBufferNumber' in something not a structure or union
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'vStreamBufferSetStreamBufferNumber':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1454:21: note: in expansion of macro 'prvGetTCBFromHandle'
+ 1454 |             pxTCB = prvGetTCBFromHandle( xTask );
+      |                     ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1413:22: warning: dereferencing 'void *' pointer
+ 1413 |         xStreamBuffer->uxStreamBufferNumber = uxStreamBufferNumber;
+      |                      ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1413:22: error: request for member 'uxStreamBufferNumber' in something not a structure or union
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'ucStreamBufferGetStreamBufferType':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1423:30: warning: dereferencing 'void *' pointer
+ 1423 |         return( xStreamBuffer->ucFlags & sbFLAGS_IS_MESSAGE_BUFFER );
+      |                              ^~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1423:30: error: request for member 'ucFlags' in something not a structure or union
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'uxTaskPriorityGetFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1494:21: note: in expansion of macro 'prvGetTCBFromHandle'
+ 1494 |             pxTCB = prvGetTCBFromHandle( xTask );
+      |                     ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskPrioritySet':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1530:21: note: in expansion of macro 'prvGetTCBFromHandle'
+ 1530 |             pxTCB = prvGetTCBFromHandle( xTask );
+      |                     ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskSuspend':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1681:21: note: in expansion of macro 'prvGetTCBFromHandle'
+ 1681 |             pxTCB = prvGetTCBFromHandle( xTaskToSuspend );
+      |                     ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskResume':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1834:24: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 1834 |         if( ( pxTCB != pxCurrentTCB ) && ( pxTCB != NULL ) )
+      |                        ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskResumeFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:1916:46: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 1916 |                     if( pxTCB->uxPriority >= pxCurrentTCB->uxPriority )
+      |                                              ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskSuspendAll':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2099:5: warning: implicit declaration of function 'portSOFTWARE_BARRIER' [-Wimplicit-function-declaration]
+ 2099 |     portSOFTWARE_BARRIER();
+      |     ^~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2107:5: warning: implicit declaration of function 'portMEMORY_BARRIER' [-Wimplicit-function-declaration]
+ 2107 |     portMEMORY_BARRIER();
+      |     ^~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskResumeAll':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2201:21: warning: implicit declaration of function 'listREMOVE_ITEM' [-Wimplicit-function-declaration]
+ 2201 |                     listREMOVE_ITEM( &( pxTCB->xEventListItem ) );
+      |                     ^~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2208:46: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 2208 |                     if( pxTCB->uxPriority >= pxCurrentTCB->uxPriority )
+      |                                              ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'pcTaskGetName':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2346:13: note: in expansion of macro 'prvGetTCBFromHandle'
+ 2346 |     pxTCB = prvGetTCBFromHandle( xTaskToQuery );
+      |             ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2491:39: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 2491 |                                       configRUN_TIME_COUNTER_TYPE * const pulTotalRunTime )
+      |                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskIncrementTick':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:2822:49: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 2822 |                         if( pxTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                                 ^~~~~~~~~~~~
+In file included from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:36,
+                 from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:40:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskSwitchContext':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:149:38: error: 'pxCurrentTCB' undeclared (first use in this function)
+  149 |         listGET_OWNER_OF_NEXT_ENTRY( pxCurrentTCB, &( pxReadyTasksLists[ uxTopPriority ] ) ); \
+      |                                      ^~~~~~~~~~~~
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/list.h:286:4: note: in definition of macro 'listGET_OWNER_OF_NEXT_ENTRY'
+  286 |  ( pxTCB ) = ( pxConstList )->pxIndex->pvOwner;           \
+      |    ^~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3062:9: note: in expansion of macro 'taskSELECT_HIGHEST_PRIORITY_TASK'
+ 3062 |         taskSELECT_HIGHEST_PRIORITY_TASK(); /*lint !e9079 void * is used as this macro is used with timers and co-routines too.  Alignment is known to be fine as the type of the pointer stored and retrieved is the same. */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskPlaceOnEventList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3102:34: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 3102 |     vListInsert( pxEventList, &( pxCurrentTCB->xEventListItem ) );
+      |                                  ^~~~~~~~~~~~
+In file included from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:36,
+                 from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:40:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskPlaceOnUnorderedEventList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3121:33: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 3121 |     listSET_LIST_ITEM_VALUE( &( pxCurrentTCB->xEventListItem ), xItemValue | taskEVENT_LIST_ITEM_VALUE_IN_USE );
+      |                                 ^~~~~~~~~~~~
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/list.h:197:59: note: in definition of macro 'listSET_LIST_ITEM_VALUE'
+  197 | #define listSET_LIST_ITEM_VALUE( pxListItem, xValue ) ( ( pxListItem )->xItemValue = ( xValue ) )
+      |                                                           ^~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskPlaceOnEventListRestricted':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3152:41: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 3152 |         listINSERT_END( pxEventList, &( pxCurrentTCB->xEventListItem ) );
+      |                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskRemoveFromEventList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3217:38: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 3217 |     if( pxUnblockedTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                      ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskRemoveFromUnorderedEventList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3275:38: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 3275 |     if( pxUnblockedTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                      ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'prvIdleTask':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3438:5: warning: implicit declaration of function 'portALLOCATE_SECURE_CONTEXT' [-Wimplicit-function-declaration]
+ 3438 |     portALLOCATE_SECURE_CONTEXT( configMINIMAL_SECURE_STACK_SIZE );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3438:34: error: 'configMINIMAL_SECURE_STACK_SIZE' undeclared (first use in this function); did you mean 'configMINIMAL_STACK_SIZE'?
+ 3438 |     portALLOCATE_SECURE_CONTEXT( configMINIMAL_SECURE_STACK_SIZE );
+      |                                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                  configMINIMAL_STACK_SIZE
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskGetInfo':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3727:17: note: in expansion of macro 'prvGetTCBFromHandle'
+ 3727 |         pxTCB = prvGetTCBFromHandle( xTask );
+      |                 ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3755:48: error: 'configRUN_TIME_COUNTER_TYPE' undeclared (first use in this function)
+ 3755 |             pxTaskStatus->ulRunTimeCounter = ( configRUN_TIME_COUNTER_TYPE ) 0;
+      |                                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3755:77: error: expected ';' before numeric constant
+ 3755 |             pxTaskStatus->ulRunTimeCounter = ( configRUN_TIME_COUNTER_TYPE ) 0;
+      |                                                                             ^~
+      |                                                                             ;
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskGetCurrentTaskHandle':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4029:19: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4029 |         xReturn = pxCurrentTCB;
+      |                   ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskPriorityInherit':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4080:48: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4080 |             if( pxMutexHolderTCB->uxPriority < pxCurrentTCB->uxPriority )
+      |                                                ^~~~~~~~~~~~
+In file included from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:56,
+                 from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskPriorityDisinherit':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4168:36: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4168 |             configASSERT( pxTCB == pxCurrentTCB );
+      |                                    ^~~~~~~~~~~~
+C:/denemeler/Chage_Task_Priority/FreeRtosConfig/FreeRTOSConfig.h:91:33: note: in definition of macro 'configASSERT'
+   91 | #define configASSERT( x ) if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); for( ;; ); }
+      |                                 ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskPriorityDisinheritAfterTimeout':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4275:44: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4275 |                     configASSERT( pxTCB != pxCurrentTCB );
+      |                                            ^~~~~~~~~~~~
+C:/denemeler/Chage_Task_Priority/FreeRtosConfig/FreeRTOSConfig.h:91:33: note: in definition of macro 'configASSERT'
+   91 | #define configASSERT( x ) if( ( x ) == 0 ) { taskDISABLE_INTERRUPTS(); for( ;; ); }
+      |                                 ^
+In file included from C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:36,
+                 from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:40:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'uxTaskResetEventItemValue':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4662:44: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4662 |     uxReturn = listGET_LIST_ITEM_VALUE( &( pxCurrentTCB->xEventListItem ) );
+      |                                            ^~~~~~~~~~~~
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/list.h:207:51: note: in definition of macro 'listGET_LIST_ITEM_VALUE'
+  207 | #define listGET_LIST_ITEM_VALUE( pxListItem ) ( ( pxListItem )->xItemValue )
+      |                                                   ^~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'pvTaskIncrementMutexHeldCount':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4678:13: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4678 |         if( pxCurrentTCB != NULL )
+      |             ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'ulTaskGenericNotifyTake':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4702:17: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4702 |             if( pxCurrentTCB->ulNotifiedValue[ uxIndexToWait ] == 0UL )
+      |                 ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4710:64: error: macro "traceTASK_NOTIFY_TAKE_BLOCK" passed 1 arguments, but takes just 0
+ 4710 |                     traceTASK_NOTIFY_TAKE_BLOCK( uxIndexToWait );
+      |                                                                ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:612: note: macro "traceTASK_NOTIFY_TAKE_BLOCK" defined here
+  612 |  #define traceTASK_NOTIFY_TAKE_BLOCK()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4710:21: error: 'traceTASK_NOTIFY_TAKE_BLOCK' undeclared (first use in this function)
+ 4710 |                     traceTASK_NOTIFY_TAKE_BLOCK( uxIndexToWait );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4732:50: error: macro "traceTASK_NOTIFY_TAKE" passed 1 arguments, but takes just 0
+ 4732 |             traceTASK_NOTIFY_TAKE( uxIndexToWait );
+      |                                                  ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:616: note: macro "traceTASK_NOTIFY_TAKE" defined here
+  616 |  #define traceTASK_NOTIFY_TAKE()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4732:13: error: 'traceTASK_NOTIFY_TAKE' undeclared (first use in this function)
+ 4732 |             traceTASK_NOTIFY_TAKE( uxIndexToWait );
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskGenericNotifyWait':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4776:17: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4776 |             if( pxCurrentTCB->ucNotifyState[ uxIndexToWait ] != taskNOTIFICATION_RECEIVED )
+      |                 ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4789:64: error: macro "traceTASK_NOTIFY_WAIT_BLOCK" passed 1 arguments, but takes just 0
+ 4789 |                     traceTASK_NOTIFY_WAIT_BLOCK( uxIndexToWait );
+      |                                                                ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:620: note: macro "traceTASK_NOTIFY_WAIT_BLOCK" defined here
+  620 |  #define traceTASK_NOTIFY_WAIT_BLOCK()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4789:21: error: 'traceTASK_NOTIFY_WAIT_BLOCK' undeclared (first use in this function)
+ 4789 |                     traceTASK_NOTIFY_WAIT_BLOCK( uxIndexToWait );
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4811:50: error: macro "traceTASK_NOTIFY_WAIT" passed 1 arguments, but takes just 0
+ 4811 |             traceTASK_NOTIFY_WAIT( uxIndexToWait );
+      |                                                  ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:624: note: macro "traceTASK_NOTIFY_WAIT" defined here
+  624 |  #define traceTASK_NOTIFY_WAIT()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4811:13: error: 'traceTASK_NOTIFY_WAIT' undeclared (first use in this function)
+ 4811 |             traceTASK_NOTIFY_WAIT( uxIndexToWait );
+      |             ^~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4849:16: error: conflicting types for 'xTaskGenericNotify'
+ 4849 |     BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |                ^~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:40:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:1765:12: note: previous declaration of 'xTaskGenericNotify' was here
+ 1765 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue ) PRIVILEGED_FUNCTION;
+      |            ^~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskGenericNotify':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4918:47: error: macro "traceTASK_NOTIFY" passed 1 arguments, but takes just 0
+ 4918 |             traceTASK_NOTIFY( uxIndexToNotify );
+      |                                               ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:628: note: macro "traceTASK_NOTIFY" defined here
+  628 |  #define traceTASK_NOTIFY()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4918:13: error: 'traceTASK_NOTIFY' undeclared (first use in this function)
+ 4918 |             traceTASK_NOTIFY( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4946:41: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 4946 |                 if( pxTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4972:16: error: conflicting types for 'xTaskGenericNotifyFromISR'
+ 4972 |     BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:40:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/task.h:1856:12: note: previous declaration of 'xTaskGenericNotifyFromISR' was here
+ 1856 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskGenericNotifyFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5060:56: error: macro "traceTASK_NOTIFY_FROM_ISR" passed 1 arguments, but takes just 0
+ 5060 |             traceTASK_NOTIFY_FROM_ISR( uxIndexToNotify );
+      |                                                        ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:632: note: macro "traceTASK_NOTIFY_FROM_ISR" defined here
+  632 |  #define traceTASK_NOTIFY_FROM_ISR()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5060:13: error: 'traceTASK_NOTIFY_FROM_ISR' undeclared (first use in this function)
+ 5060 |             traceTASK_NOTIFY_FROM_ISR( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5081:41: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 5081 |                 if( pxTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'vTaskGenericNotifyGiveFromISR':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5151:61: error: macro "traceTASK_NOTIFY_GIVE_FROM_ISR" passed 1 arguments, but takes just 0
+ 5151 |             traceTASK_NOTIFY_GIVE_FROM_ISR( uxIndexToNotify );
+      |                                                             ^
+In file included from ../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:39:
+C:/denemeler/Chage_Task_Priority/MiddleWares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:636: note: macro "traceTASK_NOTIFY_GIVE_FROM_ISR" defined here
+  636 |  #define traceTASK_NOTIFY_GIVE_FROM_ISR()
+      | 
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5151:13: error: 'traceTASK_NOTIFY_GIVE_FROM_ISR' undeclared (first use in this function)
+ 5151 |             traceTASK_NOTIFY_GIVE_FROM_ISR( uxIndexToNotify );
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5172:41: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 5172 |                 if( pxTCB->uxPriority > pxCurrentTCB->uxPriority )
+      |                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'xTaskGenericNotifyStateClear':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5210:17: note: in expansion of macro 'prvGetTCBFromHandle'
+ 5210 |         pxTCB = prvGetTCBFromHandle( xTask );
+      |                 ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'ulTaskGenericNotifyValueClear':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:234:73: error: 'pxCurrentTCB' undeclared (first use in this function)
+  234 | #define prvGetTCBFromHandle( pxHandle )    ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )
+      |                                                                         ^~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5243:17: note: in expansion of macro 'prvGetTCBFromHandle'
+ 5243 |         pxTCB = prvGetTCBFromHandle( xTask );
+      |                 ^~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'prvAddCurrentTaskToDelayedList':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:5314:26: error: 'pxCurrentTCB' undeclared (first use in this function)
+ 5314 |     if( uxListRemove( &( pxCurrentTCB->xStateListItem ) ) == ( UBaseType_t ) 0 )
+      |                          ^~~~~~~~~~~~
+make: *** [MiddleWares/Third_Party/FreeRTOS/org/Source/subdir.mk:37: MiddleWares/Third_Party/FreeRTOS/org/Source/list.o] Error 1
+make: *** Waiting for unfinished jobs....
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'uxStreamBufferGetStreamBufferNumber':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c: In function 'pvTaskIncrementMutexHeldCount':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1403:5: warning: control reaches end of non-void function [-Wreturn-type]
+ 1403 |     }
+      |     ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c: In function 'ucStreamBufferGetStreamBufferType':
+../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c:1424:5: warning: control reaches end of non-void function [-Wreturn-type]
+ 1424 |     }
+      |     ^
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:4684:5: warning: control reaches end of non-void function [-Wreturn-type]
+ 4684 |     }
+      |     ^
+At top level:
+../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c:3822:24: warning: 'prvListTasksWithinSingleList' defined but not used [-Wunused-function]
+ 3822 |     static UBaseType_t prvListTasksWithinSingleList( TaskStatus_t * pxTaskStatusArray,
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+make: *** [MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/subdir.mk:19: MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o] Error 1
+make: *** [MiddleWares/Third_Party/FreeRTOS/org/Source/subdir.mk:37: MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o] Error 1
+make: *** [MiddleWares/Third_Party/FreeRTOS/org/Source/subdir.mk:37: MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+20:14:02 Build Failed. 95 errors, 22 warnings. (took 2s.290ms)
+

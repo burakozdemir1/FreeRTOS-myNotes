@@ -1,0 +1,236 @@
+14:16:48 **** Build of configuration Debug for project TaskDelete ****
+make -j8 all 
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/croutine.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/event_groups.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/list.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/list.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/queue.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/stream_buffer.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/tasks.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/org/Source/timers.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/org/Source/timers.d" -MT"MiddleWares/Third_Party/FreeRTOS/org/Source/timers.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/org/Source/timers.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0/port.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/croutine.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/croutine.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/croutine.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/croutine.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/event_groups.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/event_groups.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/event_groups.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/event_groups.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/list.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/list.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/list.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/list.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/queue.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/queue.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/queue.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/queue.o"
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c: In function 'osSignalSet':
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:510:75: error: incompatible type for argument 4 of 'xTaskGenericNotifyFromISR'
+  510 |     if(xTaskGenericNotifyFromISR( thread_id , (uint32_t)signal, eSetBits, &ulPreviousNotificationValue, &xHigherPriorityTaskWoken ) != pdPASS )
+      |                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                           |
+      |                                                                           uint32_t * {aka long unsigned int *}
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:57:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2223:53: note: expected 'eNotifyAction' but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ 2223 |                                       eNotifyAction eAction,
+      |                                       ~~~~~~~~~~~~~~^~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:510:105: warning: pointer targets in passing argument 5 of 'xTaskGenericNotifyFromISR' differ in signedness [-Wpointer-sign]
+  510 |     if(xTaskGenericNotifyFromISR( thread_id , (uint32_t)signal, eSetBits, &ulPreviousNotificationValue, &xHigherPriorityTaskWoken ) != pdPASS )
+      |                                                                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                                         |
+      |                                                                                                         BaseType_t * {aka long int *}
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:57:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2224:50: note: expected 'uint32_t *' {aka 'long unsigned int *'} but argument is of type 'BaseType_t *' {aka 'long int *'}
+ 2224 |                                       uint32_t * pulPreviousNotificationValue,
+      |                                       ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:510:8: error: too few arguments to function 'xTaskGenericNotifyFromISR'
+  510 |     if(xTaskGenericNotifyFromISR( thread_id , (uint32_t)signal, eSetBits, &ulPreviousNotificationValue, &xHigherPriorityTaskWoken ) != pdPASS )
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:57:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2220:12: note: declared here
+ 2220 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:515:71: error: incompatible type for argument 4 of 'xTaskGenericNotify'
+  515 |   else if(xTaskGenericNotify( thread_id , (uint32_t)signal, eSetBits, &ulPreviousNotificationValue) != pdPASS )
+      |                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                       |
+      |                                                                       uint32_t * {aka long unsigned int *}
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:57:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2071:46: note: expected 'eNotifyAction' but argument is of type 'uint32_t *' {aka 'long unsigned int *'}
+ 2071 |                                eNotifyAction eAction,
+      |                                ~~~~~~~~~~~~~~^~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:515:11: error: too few arguments to function 'xTaskGenericNotify'
+  515 |   else if(xTaskGenericNotify( thread_id , (uint32_t)signal, eSetBits, &ulPreviousNotificationValue) != pdPASS )
+      |           ^~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:57,
+                 from ../MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.c:57:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2068:12: note: declared here
+ 2068 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |            ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.o"
+arm-none-eabi-gcc "../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c" -mcpu=cortex-m0 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F072xB -c -I../Core/Inc -I"C:/denemeler/TaskDelete/FreeRtosConfig" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/GCC/ARM_CM0" -I"C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/portable/MemMang" -I../Drivers/STM32F0xx_HAL_Driver/Inc -I../Drivers/STM32F0xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F0xx/Include -I../Drivers/CMSIS/Include -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM0 -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"MiddleWares/Third_Party/FreeRTOS/Source/tasks.d" -MT"MiddleWares/Third_Party/FreeRTOS/Source/tasks.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "MiddleWares/Third_Party/FreeRTOS/Source/tasks.o"
+make: *** [MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/subdir.mk:19: MiddleWares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.o] Error 1
+make: *** Waiting for unfinished jobs....
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:219:23: error: conflicting types for 'xStreamBufferGenericCreate'
+  219 |  StreamBufferHandle_t xStreamBufferGenericCreate( size_t xBufferSizeBytes, size_t xTriggerLevelBytes, BaseType_t xIsMessageBuffer )
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:40:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/stream_buffer.h:883:22: note: previous declaration of 'xStreamBufferGenericCreate' was here
+  883 | StreamBufferHandle_t xStreamBufferGenericCreate( size_t xBufferSizeBytes,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c: In function 'xStreamBufferGenericCreate':
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:263:10: warning: returning 'struct StreamBufferDef_t **' from a function with incompatible return type 'StreamBufferHandle_t' {aka 'struct StreamBufferDef_t *'} [-Wincompatible-pointer-types]
+  263 |   return ( StreamBufferHandle_t * ) pucAllocatedMemory; /*lint !e9087 !e826 Safe cast as allocated memory is aligned. */
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:271:23: error: conflicting types for 'xStreamBufferGenericCreateStatic'
+  271 |  StreamBufferHandle_t xStreamBufferGenericCreateStatic( size_t xBufferSizeBytes,
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:40:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/stream_buffer.h:890:22: note: previous declaration of 'xStreamBufferGenericCreateStatic' was here
+  890 | StreamBufferHandle_t xStreamBufferGenericCreateStatic( size_t xBufferSizeBytes,
+      |                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c: In function 'xStreamBufferSend':
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:523:44: warning: passing argument 1 of 'xStreamBufferSpacesAvailable' from incompatible pointer type [-Wincompatible-pointer-types]
+  523 |     xSpace = xStreamBufferSpacesAvailable( pxStreamBuffer );
+      |                                            ^~~~~~~~~~~~~~
+      |                                            |
+      |                                            StreamBuffer_t * const {aka struct xSTREAM_BUFFER * const}
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:451:59: note: expected 'StreamBufferHandle_t' {aka 'struct StreamBufferDef_t *'} but argument is of type 'StreamBuffer_t * const' {aka 'struct xSTREAM_BUFFER * const'}
+  451 | size_t xStreamBufferSpacesAvailable( StreamBufferHandle_t xStreamBuffer )
+      |                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:555:42: warning: passing argument 1 of 'xStreamBufferSpacesAvailable' from incompatible pointer type [-Wincompatible-pointer-types]
+  555 |   xSpace = xStreamBufferSpacesAvailable( pxStreamBuffer );
+      |                                          ^~~~~~~~~~~~~~
+      |                                          |
+      |                                          StreamBuffer_t * const {aka struct xSTREAM_BUFFER * const}
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:451:59: note: expected 'StreamBufferHandle_t' {aka 'struct StreamBufferDef_t *'} but argument is of type 'StreamBuffer_t * const' {aka 'struct xSTREAM_BUFFER * const'}
+  451 | size_t xStreamBufferSpacesAvailable( StreamBufferHandle_t xStreamBuffer )
+      |                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c: In function 'xStreamBufferSendFromISR':
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:613:41: warning: passing argument 1 of 'xStreamBufferSpacesAvailable' from incompatible pointer type [-Wincompatible-pointer-types]
+  613 |  xSpace = xStreamBufferSpacesAvailable( pxStreamBuffer );
+      |                                         ^~~~~~~~~~~~~~
+      |                                         |
+      |                                         StreamBuffer_t * const {aka struct xSTREAM_BUFFER * const}
+../MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.c:451:59: note: expected 'StreamBufferHandle_t' {aka 'struct StreamBufferDef_t *'} but argument is of type 'StreamBuffer_t * const' {aka 'struct xSTREAM_BUFFER * const'}
+  451 | size_t xStreamBufferSpacesAvailable( StreamBufferHandle_t xStreamBuffer )
+      |                                      ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:95: warning: "tskSTATIC_AND_DYNAMIC_ALLOCATION_POSSIBLE" redefined
+   95 | #define tskSTATIC_AND_DYNAMIC_ALLOCATION_POSSIBLE ( ( configSUPPORT_STATIC_ALLOCATION == 1 ) && ( configSUPPORT_DYNAMIC_ALLOCATION == 1 ) )
+      | 
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:38:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/FreeRTOS.h:1187: note: this is the location of the previous definition
+ 1187 | #define tskSTATIC_AND_DYNAMIC_ALLOCATION_POSSIBLE                                                                                     \
+      | 
+make: *** [MiddleWares/Third_Party/FreeRTOS/Source/subdir.mk:37: MiddleWares/Third_Party/FreeRTOS/Source/stream_buffer.o] Error 1
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c: In function 'prvIdleTask':
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:3229:2: warning: implicit declaration of function 'portTASK_CALLS_SECURE_FUNCTIONS' [-Wimplicit-function-declaration]
+ 3229 |  portTASK_CALLS_SECURE_FUNCTIONS();
+      |  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c: At top level:
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4392:8: error: conflicting types for 'pvTaskIncrementMutexHeldCount'
+ 4392 |  void *pvTaskIncrementMutexHeldCount( void )
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:39:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:3104:14: note: previous declaration of 'pvTaskIncrementMutexHeldCount' was here
+ 3104 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      |              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2640:30: error: expected declaration specifiers or '...' before '(' token
+ 2640 |     ulTaskGenericNotifyTake( ( tskDEFAULT_INDEX_TO_NOTIFY ), ( xClearCountOnExit ), ( xTicksToWait ) )
+      |                              ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4409:11: note: in expansion of macro 'ulTaskNotifyTake'
+ 4409 |  uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait )
+      |           ^~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2640:62: error: expected declaration specifiers or '...' before '(' token
+ 2640 |     ulTaskGenericNotifyTake( ( tskDEFAULT_INDEX_TO_NOTIFY ), ( xClearCountOnExit ), ( xTicksToWait ) )
+      |                                                              ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4409:11: note: in expansion of macro 'ulTaskNotifyTake'
+ 4409 |  uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait )
+      |           ^~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2640:85: error: expected declaration specifiers or '...' before '(' token
+ 2640 |     ulTaskGenericNotifyTake( ( tskDEFAULT_INDEX_TO_NOTIFY ), ( xClearCountOnExit ), ( xTicksToWait ) )
+      |                                                                                     ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4409:11: note: in expansion of macro 'ulTaskNotifyTake'
+ 4409 |  uint32_t ulTaskNotifyTake( BaseType_t xClearCountOnExit, TickType_t xTicksToWait )
+      |           ^~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:39:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:74:40: error: expected declaration specifiers or '...' before '(' token
+   74 | #define tskDEFAULT_INDEX_TO_NOTIFY     ( 0 )
+      |                                        ^
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2370:29: note: in expansion of macro 'tskDEFAULT_INDEX_TO_NOTIFY'
+ 2370 |     xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )
+      |                             ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4477:13: note: in expansion of macro 'xTaskNotifyWait'
+ 4477 |  BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait )
+      |             ^~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:39:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2370:57: error: expected declaration specifiers or '...' before '(' token
+ 2370 |     xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )
+      |                                                         ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4477:13: note: in expansion of macro 'xTaskNotifyWait'
+ 4477 |  BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait )
+      |             ^~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2370:83: error: expected declaration specifiers or '...' before '(' token
+ 2370 |     xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )
+      |                                                                                   ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4477:13: note: in expansion of macro 'xTaskNotifyWait'
+ 4477 |  BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait )
+      |             ^~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2370:108: error: expected declaration specifiers or '...' before '(' token
+ 2370 |     xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )
+      |                                                                                                            ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4477:13: note: in expansion of macro 'xTaskNotifyWait'
+ 4477 |  BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait )
+      |             ^~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2370:134: error: expected declaration specifiers or '...' before '(' token
+ 2370 |     xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )
+      |                                                                                                                                      ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4477:13: note: in expansion of macro 'xTaskNotifyWait'
+ 4477 |  BaseType_t xTaskNotifyWait( uint32_t ulBitsToClearOnEntry, uint32_t ulBitsToClearOnExit, uint32_t *pulNotificationValue, TickType_t xTicksToWait )
+      |             ^~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4557:13: error: conflicting types for 'xTaskGenericNotify'
+ 4557 |  BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue )
+      |             ^~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:39:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2068:12: note: previous declaration of 'xTaskGenericNotify' was here
+ 2068 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |            ^~~~~~~~~~~~~~~~~~
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4663:13: error: conflicting types for 'xTaskGenericNotifyFromISR'
+ 4663 |  BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify, uint32_t ulValue, eNotifyAction eAction, uint32_t *pulPreviousNotificationValue, BaseType_t *pxHigherPriorityTaskWoken )
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:39:
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2220:12: note: previous declaration of 'xTaskGenericNotifyFromISR' was here
+ 2220 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2534:36: error: expected declaration specifiers or '...' before '(' token
+ 2534 |     vTaskGenericNotifyGiveFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( pxHigherPriorityTaskWoken ) )
+      |                                    ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4787:7: note: in expansion of macro 'vTaskNotifyGiveFromISR'
+ 4787 |  void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken )
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2534:55: error: expected declaration specifiers or '...' before '(' token
+ 2534 |     vTaskGenericNotifyGiveFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( pxHigherPriorityTaskWoken ) )
+      |                                                       ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4787:7: note: in expansion of macro 'vTaskNotifyGiveFromISR'
+ 4787 |  void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken )
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2534:87: error: expected declaration specifiers or '...' before '(' token
+ 2534 |     vTaskGenericNotifyGiveFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( pxHigherPriorityTaskWoken ) )
+      |                                                                                       ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4787:7: note: in expansion of macro 'vTaskNotifyGiveFromISR'
+ 4787 |  void vTaskNotifyGiveFromISR( TaskHandle_t xTaskToNotify, BaseType_t *pxHigherPriorityTaskWoken )
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2704:35: error: expected declaration specifiers or '...' before '(' token
+ 2704 |     xTaskGenericNotifyStateClear( ( xTask ), ( tskDEFAULT_INDEX_TO_NOTIFY ) )
+      |                                   ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4876:13: note: in expansion of macro 'xTaskNotifyStateClear'
+ 4876 |  BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask )
+      |             ^~~~~~~~~~~~~~~~~~~~~
+C:/denemeler/TaskDelete/MiddleWares/Third_Party/FreeRTOS/org/Source/include/task.h:2704:46: error: expected declaration specifiers or '...' before '(' token
+ 2704 |     xTaskGenericNotifyStateClear( ( xTask ), ( tskDEFAULT_INDEX_TO_NOTIFY ) )
+      |                                              ^
+../MiddleWares/Third_Party/FreeRTOS/Source/tasks.c:4876:13: note: in expansion of macro 'xTaskNotifyStateClear'
+ 4876 |  BaseType_t xTaskNotifyStateClear( TaskHandle_t xTask )
+      |             ^~~~~~~~~~~~~~~~~~~~~
+make: *** [MiddleWares/Third_Party/FreeRTOS/Source/subdir.mk:37: MiddleWares/Third_Party/FreeRTOS/Source/tasks.o] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+14:16:52 Build Failed. 26 errors, 7 warnings. (took 3s.782ms)
+
